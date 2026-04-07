@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('authors', function (Blueprint $table) {
-            $table->id() -> primaryKey();
+            $table->id();
             $table->string('name');
             $table->string('email')->unique();
             $table->date("birth_date")->nullable();
